@@ -1,1 +1,3 @@
 *beam
+rust/*/target
+Cargo.lock
