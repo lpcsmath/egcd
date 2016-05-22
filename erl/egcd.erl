@@ -12,7 +12,8 @@ egcd(M,N) ->
 %    am  + bn  = d
 %  then egcdaux (1,0,0,1,m,n) = (s,t,d) such that
 %    d = gcd(m,n) and
-egcdaux (A1,B1,A,B,C,D) ->
+%    sm + tn = d
+egcdauxx(A1,B1,A,B,C,D) ->
     Q = C div D,
     R = C rem D,
     if
