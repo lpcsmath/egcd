@@ -1,6 +1,14 @@
+--
+-- egcd m n = (s,t,d) such that
+-- d = gcd(m,n) = sm + tn
+--
 egcd :: Int -> Int -> (Int,Int,Int)
-egcd m n = egcdaux 1 0 0 1 m n
+egcd = egcdaux 1 0 0 1
 
+--
+-- egcdaux 1 0 0 1 m n = (s,t,d) such that
+-- d = gcd(m,n) = sm + tn
+--
 egcdaux :: Int -> Int -> Int -> Int -> Int -> Int -> (Int,Int,Int)
 egcdaux a' b' a b c d =
    let
