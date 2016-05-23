@@ -20,15 +20,18 @@ pub fn egcd (m: i32, n: i32) -> (i32,i32,i32) {
 
    let (mut q, mut r) = (c / d, c % d);
    while r != 0 {
-      // (a1,b1,a,b) = (a,b,a1-q*a,b1-q*b)
+      // (a1,b1,a,b,c,d) => (a,b,a1-q*a,b1-q*b,d,r)
       let mut t = a1;
       a1 = a;
       a = t - q*a;
+
       t = b1;
       b1 = b;
       b = t - q*b;
+
       c = d;
       d = r;
+
       q = c / d;
       r = c % d;
    }
