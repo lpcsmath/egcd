@@ -15,6 +15,7 @@ object Egcd {
     //    a'm + b'n = c   and
     //    am  + bn  = d
     //
+    //              a' b' a  b  c  d
     // then egcdaux(1, 0, 0, 1, m, n) = (s,t,d) such that
     // d = gcd(m,n) and
     // sm + tn = d
