@@ -1,3 +1,10 @@
 *beam
 rust/*/target
 Cargo.lock
+
+/scala/egcd/RUNNING_PID
+/scala/egcd/logs/
+/scala/egcd/project/*-shim.sbt
+/scala/egcd/project/project/
+/scala/egcd/project/target/
+/scala/egcd/target/

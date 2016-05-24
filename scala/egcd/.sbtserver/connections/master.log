@@ -1,0 +1,40 @@
+New log file opened at Tue May 24 10:27:20 CEST 2016 by 17161@Lothars-MBP.fritz.box
+Taking next connection to: 56174
+New client attempting to connect on port: 56175-56174
+  Address = /192.168.178.30:56174
+This client on port 56175 has uuid 99faa552-424f-4a4b-b238-f72be169381a configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-99faa552-424f-4a4b-b238-f72be169381a
+Taking next connection to: 56174
+New client attempting to connect on port: 56176-56174
+  Address = /192.168.178.30:56174
+Handshake exception on socket: 56176
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 56174
+New client attempting to connect on port: 56177-56174
+  Address = /192.168.178.30:56174
+This client on port 56177 has uuid 3b1ec2f2-fefa-4ba9-bf05-c251202d9aac configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-99faa552-424f-4a4b-b238-f72be169381a, activator-3b1ec2f2-fefa-4ba9-bf05-c251202d9aac
+Taking next connection to: 56174
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 56174
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 56174
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 56174
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 56174
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 56174
