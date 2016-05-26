@@ -14,9 +14,9 @@ egcd(M,N) ->
 %    d = gcd(m,n) and
 %    sm + tn = d
 egcdaux(A1,B1,A,B,C,D) ->
-    Q = C div D,
-    R = C rem D,
-    case R of
+    case C rem D of
 		0 -> {A,B,D};
-		_ -> egcdaux (A,B,A1 - Q*A, B1 - Q*B,D,R)
+		R ->
+			Q = C div D,
+	    	egcdaux (A,B,A1 - Q*A, B1 - Q*B,D,R)
 	end.
