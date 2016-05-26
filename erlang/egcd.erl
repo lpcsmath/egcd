@@ -13,12 +13,10 @@ egcd(M,N) ->
 %  then egcdaux (1,0,0,1,m,n) = (s,t,d) such that
 %    d = gcd(m,n) and
 %    sm + tn = d
-egcdauxx(A1,B1,A,B,C,D) ->
+egcdaux(A1,B1,A,B,C,D) ->
     Q = C div D,
     R = C rem D,
-    if
-       R =:= 0 ->
-       		{A,B,D};
-       true ->
-       		egcdaux (A,B,A1 - Q*A, B1 - Q*B,D,R)
+    case R of
+		0 -> {A,B,D};
+		_ -> egcdaux (A,B,A1 - Q*A, B1 - Q*B,D,R)
 	end.
